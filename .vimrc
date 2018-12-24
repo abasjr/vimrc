@@ -10,9 +10,13 @@ map <C-l> <C-W>l
 nmap <C-m> [e
 nmap <C-n> ]e
 
-" Buat indent di xterm
-" :set listchars=tab:\¦\
-" :set list
+"Buat indent di xterm
+" set listchars=tab:\¦\
+" set list
+
+" let g:indentLine_char = '¦'
+" let g:indentLine_setColors = 0
+
 
 " BUAT JAVAC
 autocmd Filetype java set makeprg=javac\ %
@@ -41,7 +45,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tomtom/checksyntax_vim'
 " Plugin 'gilsondev/searchtasks.vim'
 " Plugin 'Shougo/neocomplete.vim'
-" Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-dispatch'
 Plugin 'scrooloose/nerdtree'
 " Plugin 'valloric/YouCompleteMe'
@@ -110,6 +114,9 @@ set nu rnu
 " :set nu! rnu!
 
 " powerline
-set rtp+=/usr/local/lib/python3.6/site-packages/powerline/bindings/vim
+set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim
 set laststatus=2
 set t_Co=256
+
+let g:airline#extensions#tabline#enabled = 1
+
