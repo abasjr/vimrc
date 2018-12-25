@@ -118,5 +118,7 @@ set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim
 set laststatus=2
 set t_Co=256
 
+" Setting Powerline Airline
 let g:airline#extensions#tabline#enabled = 1
-
+let g:airline#extensions#tabline#formatter='unique_tail'
+let g:airline_powerline_fonts=1
