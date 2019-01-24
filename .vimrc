@@ -8,7 +8,7 @@ map <C-l> <C-W>l
 
 " Untuk bubbling line menggunakan tpope/unimpaired
 nmap <C-m> [e
-nmap <C-n> ]e
+nmap <C-b> ]e
 
 "Buat indent di xterm
 " set listchars=tab:\¦\
@@ -62,6 +62,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'janko-m/vim-test'
 " Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jiangmiao/auto-pairs' "otomatis nutup kurung atau nutup quote)
+Plugin 'terryma/vim-multiple-cursors' "multiple cursor untuk vim
 " Plugin 'rsense/rsense'
 " Plugin 'Shougo/neocomplcache-rsense.vim'
 " Plugin 'vim-airline/vim-airline-themes'
@@ -114,7 +115,7 @@ set nu rnu
 " :set nu! rnu!
 
 " powerline
-set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim
+" set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim
 set laststatus=2
 set t_Co=256
 
@@ -122,3 +123,5 @@ set t_Co=256
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter='unique_tail'
 let g:airline_powerline_fonts=1
+let g:powerline_pycmd = 'py3'
+let g:pymcd_powerline="py3"
