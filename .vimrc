@@ -10,6 +10,9 @@ map <C-l> <C-W>l
 nmap <C-m> [e
 nmap <C-b> ]e
 
+" Untuk setting search buffer
+nmap <leader>b :CtrlPBuffer<cr>
+
 "Buat indent di xterm
 " set listchars=tab:\¦\
 " set list
