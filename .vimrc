@@ -13,6 +13,12 @@ nmap <C-b> ]e
 " Untuk setting search buffer
 nmap <leader>b :CtrlPBuffer<cr>
 
+" Untuk setting :bd yaitu delete buffer
+nmap <leader>q :bd<Return>
+
+" Untuk pindah tab antara buffer
+" ]b  dan [b
+
 "Buat indent di xterm
 " set listchars=tab:\¦\
 " set list
@@ -77,13 +83,14 @@ Plugin 'L9'
 " autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 " autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 
-Plugin 'mileszs/ack.vim'
+" Plugin 'mileszs/ack.vim'
+Plugin 'dyng/ctrlsf.vim'  "pengganti ack.vim
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " let g:ackprg = 'ag --nogroup --nocolor --column' " buat ack grep (searching word in folder)
-let g:ackprg = 'ag --vimgrep'
+" let g:ackprg = 'ag --vimgrep'
 " let g:ag_working_path_mode="r"
 
 call vundle#end()            " required
@@ -101,6 +108,7 @@ set softtabstop=2
 set expandtab "untuk convert dari tab ke space, untuk coding penggunaan tab kurang baik, text editor yang otomatis space(atom, visual studio code"
 set ruler
 " colorscheme last256
+colorscheme 0x7A69_dark
 filetype indent plugin on
 set visualbell
 
