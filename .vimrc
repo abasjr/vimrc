@@ -16,8 +16,13 @@ nmap <leader>b :CtrlPBuffer<cr>
 " Untuk setting :bd yaitu delete buffer
 nmap <leader>q :bd<Return>
 
+" Untuk setting CtrlSF (search in directory) syarat ack
+nmap <leader>f :CtrlSF<Space>
+
 " Untuk pindah tab antara buffer
 " ]b  dan [b
+
+" Untuk multiple cursor CTRL-N di kata yang mau diganti"
 
 "Buat indent di xterm
 " set listchars=tab:\¦\
