@@ -15,6 +15,9 @@ nmap <leader>b :CtrlPBuffer<cr>
 
 " Untuk setting :bd yaitu delete buffer
 nmap <leader>q :bd<Return>
+" Untuk setting pindah buffer
+noremap [w :bp<CR>
+noremap ]w :bn<CR>
 
 " Untuk setting CtrlSF (search in directory) syarat ack
 nmap <leader>f :CtrlSF<Space>
@@ -152,4 +155,4 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 0 
