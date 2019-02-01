@@ -107,6 +107,7 @@ filetype plugin indent on    " required
 filetype on
 set cursorcolumn
 set cursorline
+set ignorecase "pencarian fitur"
 set autoindent
 filetype plugin indent on
 syntax on
@@ -145,13 +146,11 @@ let g:airline_powerline_fonts=1
 let g:powerline_pycmd = 'py3'
 let g:pymcd_powerline="py3"
 
-set ignorecase
 
 " SyntasticCheck
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
