@@ -27,6 +27,9 @@ nmap <leader>f :CtrlSF<Space>
 
 " Untuk multiple cursor CTRL-N di kata yang mau diganti"
 
+" Clear Hightlight Search
+map <Esc> :noh<cr>
+
 "Buat indent di xterm
 " set listchars=tab:\¦\
 " set list
