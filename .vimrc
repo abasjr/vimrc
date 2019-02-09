@@ -69,7 +69,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-dispatch'
 Plugin 'scrooloose/nerdtree'
 " Plugin 'valloric/YouCompleteMe'
-Plugin 'ervandew/supertab'
+Plugin 'ervandew/supertab' "auto complete
 Plugin 'Yggdroot/indentLine'
 " Plugin 'wesQ3/vim-windowswap'
 Plugin 'tpope/vim-surround'
