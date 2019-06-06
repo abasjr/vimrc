@@ -1,0 +1,4 @@
+LControl & Tab::AltTab
+
+^q::Send !{F4}
+return
