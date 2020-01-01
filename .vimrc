@@ -22,6 +22,9 @@ noremap ]w :bn<CR>
 " Untuk setting CtrlSF (search in directory) syarat ack
 nmap <leader>f :CtrlSF<Space>
 
+" Searching ACK non-case sensitive
+let g:ctrlsf_case_sensitive = 'no'
+
 " Untuk pindah tab antara buffer
 " ]b  dan [b
 
