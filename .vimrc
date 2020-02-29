@@ -98,6 +98,7 @@ Plugin 'L9'
 " autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 
 " Plugin 'mileszs/ack.vim'
+Plugin 'quentindecock/vim-cucumber-align-pipes'
 Plugin 'dyng/ctrlsf.vim'  "pengganti ack.vim
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
