@@ -76,6 +76,7 @@ Plugin 'ervandew/supertab' "auto complete
 Plugin 'Yggdroot/indentLine'
 " Plugin 'wesQ3/vim-windowswap'
 Plugin 'tpope/vim-surround'
+Plugin 'codota/tabnine-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'kien/ctrlp.vim'
