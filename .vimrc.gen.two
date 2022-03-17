@@ -69,12 +69,12 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tomtom/checksyntax_vim'
 " Plugin 'gilsondev/searchtasks.vim'
 " Plugin 'Shougo/neocomplete.vim'
-Plugin 'nathanaelkane/vim-indent-guides'
+" Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-dispatch'
 Plugin 'scrooloose/nerdtree'
 " Plugin 'valloric/YouCompleteMe'
 " Plugin 'ervandew/supertab' "auto complete
-Plugin 'Yggdroot/indentLine'
+" Plugin 'Yggdroot/indentLine'
 " Plugin 'wesQ3/vim-windowswap'
 Plugin 'tpope/vim-surround'
 " Plugin 'codota/tabnine-vim'
@@ -94,7 +94,7 @@ Plugin 'tpope/vim-endwise'
 " Plugin 'janko-m/vim-test'
 " Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'jiangmiao/auto-pairs' "otomatis nutup kurung atau nutup quote)
-Plugin 'terryma/vim-multiple-cursors' "multiple cursor untuk vim
+" Plugin 'terryma/vim-multiple-cursors' "multiple cursor untuk vim
 Plugin 'mg979/vim-visual-multi' "pengganti vim-multiple-cursor
 " Plugin 'rsense/rsense'
 " Plugin 'Shougo/neocomplcache-rsense.vim'
@@ -144,8 +144,10 @@ set expandtab "untuk convert dari tab ke space, untuk coding penggunaan tab kura
 set ruler
 " colorscheme last256
 " colorscheme codeschool
-colorscheme 0x7A69_dark
+" colorscheme 0x7A69_dark
 " colorscheme gruvbox
+colorscheme DevC++
+
 filetype indent plugin on
 set visualbell
 
@@ -303,7 +305,8 @@ function! s:show_documentation()
   endif
 endfunction
 " Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
+" Kalau mau di highlight
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
@@ -390,3 +393,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+hi CursorColumn ctermbg=243
